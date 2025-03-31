@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('static/Flag1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 700px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            color: #333;
+            margin-bottom: 15px;
+            test-size:15;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .p1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color:rgb(18, 55, 94);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>{{points}} </h4>
+        <p class="p1"><i>{{msg}}</i></p>
+        <form action="/score" method="POST">
+            <h2></h2>
+            <div class="form-group">
+                <label for="flag">ENTER THE FLAG:</label>
+                <input type="text" id="flag" name="flag" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container">
+        <p class="p1">Yay! You are awesome - Michael feels better, catch all the flags of happiness?</p>
+    </div>
+        <p class="p1">{{flag2}}</p>
+</body>
+</html>

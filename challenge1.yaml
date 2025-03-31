@@ -1,0 +1,50 @@
+title: Example Web With DB Challenge
+author:
+description: 'Starter web application with a number of simple challenges (easy)'
+public_description: >
+
+    <div class="challtext">
+
+    <p>Michael lives in a poetic town</p> 
+    <p>The town which make you feel the depth of life through the rainy seasons and joy of the life through the summer sunshine, 'Edinberg'.</p>
+    
+    <p>Remember the school days when we were kids and we loved to play outdoors with other kids and mom keeps shouting to get you land back to home!</p> 
+    <p>We all have some hobbies, we love doing them indeed and they makes us happy, satisfied and fulfilled! Like we can do that our whole life!</p>
+    
+    <p>Michael in his college days was a star, yet a simple boy is a 70 year old man now! 
+    <p>He wanted to pursue his hobbies as a career, but because of family responsibilities he gave up on it!</p>
+    
+    <p>Well he is now on a wheelchair, But he will love if you can try your hobbies to get somewhere! He will find himself in you</p>
+    <p>You can be an angel to enter the grounds of Michael's life</p>
+    <p>Go to the grounds of his life and let him find himself in you! - Let him smile for long!</p>
+
+    <br><br><i>Author information: mokbhandari@deloitte.com </a>.</i>
+    
+    </div>
+
+category: web
+tags: "easy"
+
+flags:
+  - tags: [misc]
+    title: 'Hidden flag'
+    unique_id: example_web_with_db_challenge_1
+    description: 'Michael is looking for his happiness in you, can introduce and show him your hobbies?'
+    points: 50
+    value: CTF{xx_tbd_xx}
+
+  - tags: [misc]
+    title: 'Another flag'
+    unique_id: example_web_with_db_challenge_2
+    description: 'Making someone make happy always helps you get happiness! Capture all the happiness here'
+    points: 50
+    value: CTF{xx_tbd_yy}
+
+
+# systems:
+# - type: docker
+#   image: xml_potraits
+#   networks:
+#   - {net: access}
+#   exposed:
+#   - {port: 3000, type: web}
